@@ -1,0 +1,1 @@
+wygenrowanie hasła do PHPMYADMIN: https://bcrypt.online

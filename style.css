@@ -1,0 +1,37 @@
+body {
+  font-family: "Georgia";
+  background-color: #A9A9A9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  margin-top: 50px;
+  background: whitesmoke;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  width: 90%;
+  max-width: 600px;
+}
+
+input, button {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #005eff;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005eff;
+}
