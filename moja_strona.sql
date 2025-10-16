@@ -61,7 +61,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `password`) VALUES
-(1, 'admin', '$2y$10$Q17ezIxl5Hda9QUGm8AuyOXpYqk.LzkI2wUm2u0H0j94xokLaKxbi');
+
 
 --
 -- Indeksy dla zrzutów tabel
