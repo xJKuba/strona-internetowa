@@ -1,6 +1,8 @@
 <?php
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
 session_start();
-require 'config.php';
+require 'db_config_example.php';
 if (!isset($_SESSION['user'])) {
     header("Location: login.php");
     exit;
@@ -37,7 +39,7 @@ $dane = $pdo->query("SELECT * FROM dane")->fetchAll();
 <p>Twój adres IP: <?= $ip ?></p>
 <p>Przeglądarka: <?= htmlspecialchars($userAgent) ?></p>
 
-<h3>Dodaj osobę</h3>
+<h3>Dodaj klienta</h3>
 <form method="post">
     <input type="text" name="imie" placeholder="Imię" required>
     <input type="text" name="nazwisko" placeholder="Nazwisko" required>
@@ -47,7 +49,7 @@ $dane = $pdo->query("SELECT * FROM dane")->fetchAll();
     <button name="add">Dodaj</button>
 </form>
 
-<h3>Lista osób</h3>
+<h3>Klienci</h3>
 <table border="1" cellpadding="5" cellspacing="0">
 <tr><th>ID</th><th>Imię</th><th>Nazwisko</th><th>Wiek</th><th>Telefon</th><th>Adres</th><th>Usuń</th></tr>
 <?php foreach($dane as $row): ?>
